@@ -1,6 +1,6 @@
-# pet-watcher-equipe-03
+### pet-watcher-equipe-03
 
-## Install
+### Install
 
 In your terminal:
 # instale o pacote
