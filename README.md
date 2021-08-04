@@ -1,9 +1,8 @@
 ### pet-watcher-equipe-03
 
-### Install
-
-In your terminal:
-# instale o pacote
+## Instalação
+## Em seu terminal:
+# Instale o pacote
 ```bash
 composer install
 ```
@@ -18,7 +17,7 @@ Utilize os mesmo dados, altere apenas a sua senha do banco de dados, se tiver.
 php artisan key:generate
 ```
 
-# run the migration
+# Execute a migração
 ```bash
 php artisan db:create
 ```
@@ -29,7 +28,7 @@ php artisan migrate:fresh
 php artisan db:seed
 ```
 
-# Iniciar um servidor de desenvolvimento para a aplicação Laravel.
+# Inicie um servidor de desenvolvimento para a aplicação Laravel.
 ```bash
 php artisan serve
 ```
