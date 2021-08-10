@@ -19,9 +19,6 @@ php artisan key:generate
 
 # Execute a migração
 ```bash
-php artisan db:create
-```
-```bash
 php artisan migrate:fresh
 ```
 ```bash

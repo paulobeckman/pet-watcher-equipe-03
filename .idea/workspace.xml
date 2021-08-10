@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="778b357f-8962-4936-b8a1-fa4c3f253302" name="Default Changelist" comment="[Login/Especies/Reset Senha]&#10;Tela de Login/Registro&#10;Tela de Especies/CRUD&#10;Tela de Reset Senha">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/SpeciesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/SpeciesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/lang/en/passwords.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/lang/en/passwords.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/lang/en/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/home.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/settings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/settings.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="778b357f-8962-4936-b8a1-fa4c3f253302" name="Default Changelist" comment="[Login]&#10;Ajuste na tela de Login" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,6 +161,7 @@
       <workItem from="1628398404763" duration="1079000" />
       <workItem from="1628554802339" duration="9923000" />
       <workItem from="1628564831272" duration="3608000" />
+      <workItem from="1628633005447" duration="181000" />
     </task>
     <task id="LOCAL-00001" summary="[Criando o projeto]&#10;Projeto inicial Laravel.">
       <created>1628035031987</created>
@@ -200,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628399456725</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[Login]&#10;Ajuste na tela de Login">
+      <created>1628633093079</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1628633093079</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +220,7 @@
     <MESSAGE value="[Criando o projeto]&#10;Projeto inicial Laravel." />
     <MESSAGE value="Revert &quot;first commit&quot;&#10;&#10;This reverts commit 9045a0e8" />
     <MESSAGE value="[Login/Especies/Reset Senha]&#10;Tela de Login/Registro&#10;Tela de Especies/CRUD&#10;Tela de Reset Senha" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Login/Especies/Reset Senha]&#10;Tela de Login/Registro&#10;Tela de Especies/CRUD&#10;Tela de Reset Senha" />
+    <MESSAGE value="[Login]&#10;Ajuste na tela de Login" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Login]&#10;Ajuste na tela de Login" />
   </component>
 </project>
