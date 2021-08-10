@@ -14,7 +14,8 @@ class CreateSpeciesTable extends Migration
     public function up()
     {
         Schema::create('species', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->unsignedBigInteger('id');
+            $table->integer('id_species');
             $table->string('name');
             $table->timestamps();
         });
