@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Validator, Redirect, Response;
 use App\User;
 use Illuminate\Support\Facades\Auth;
+
 // use Illuminate\Support\Facades\Hash;
 use Session;
 use Hash;
@@ -34,7 +35,7 @@ class AuthController extends Controller
             // Authentication passed...
             return redirect()->intended('dashboard');
         }
-        return Redirect::to("login")->withSuccess('Oppes! Você inseriu credenciais inválidas');
+        return Redirect::to("login")->with('message', 'Oppes! Você inseriu credenciais inválidas');
     }
 
     public function postRegister(Request $request)
@@ -49,7 +50,7 @@ class AuthController extends Controller
 
         $check = $this->create($data);
 
-        return Redirect::to("dashboard")->withSuccess('Ótimo! Você fez login com sucesso');
+        return Redirect::to("dashboard")->with('message', 'Ótimo! Você fez login com sucesso');
     }
 
     public function dashboard()
@@ -58,7 +59,7 @@ class AuthController extends Controller
         if (Auth::check()) {
             return view('dashboard');
         }
-        return Redirect::to("login")->withSuccess('Ops! Você não tem acesso');
+        return Redirect::to("login")->with('message', 'Ops! Você não tem acesso');
     }
 
     public function create(array $data)
@@ -102,6 +103,7 @@ class AuthController extends Controller
             return redirect()->back()->with('success', 'Senha atualizada com sucesso.');
         } else {
             return redirect()->back()->with('error', 'A senha antiga não corresponde.');
+
         }
         return view('login');
     }
