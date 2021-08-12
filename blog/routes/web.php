@@ -38,4 +38,20 @@ Route::delete('species/{id}', 'SpeciesController@destroy');
 Route::get('settings/change-password', 'AuthController@change_password')->name('change_password');
 Route::post('settings/update-password', 'AuthController@update_password')->name('update_password');
 
+Route::get('accredited', 'AccreditedController@index');
+Route::get('accredited/create', 'AccreditedController@create');
+Route::post('accredited/create', 'AccreditedController@store')->name('nova_credencial');
+Route::get('accredited/{id}', 'AccreditedController@show');
+Route::get('accredited/edit/{id}', 'AccreditedController@edit');
+Route::post('accredited/edit/{id}', 'AccreditedController@update');
+Route::delete('accredited/{id}', 'AccreditedController@destroy');
+
+Route::get('license', 'LicenseController@index');
+Route::get('license/create', 'LicenseController@create');
+Route::post('license/create', 'LicenseController@store')->name('nova_licenca');
+Route::get('license/{id}', 'LicenseController@show');
+Route::get('license/edit/{id}', 'LicenseController@edit');
+Route::post('license/edit/{id}', 'LicenseController@update');
+Route::delete('license/{id}', 'LicenseController@destroy');
+
 

@@ -7,7 +7,7 @@
         Nova Especie
     </div>
     <div class="card-body">
-        <form action="{{ route('nova_especie') }}" method="post">
+        <form action="{{ route('nova_credencial') }}" method="post">
             @csrf
             <label for="name" class="form-label">Nome da especie</label>
             <input class="form-control " type="text" name="name" id="name">
@@ -16,7 +16,7 @@
         </form>
     </div>
     <div class="card-footer">
-            <a class="btn btn-primary mt-2" href="{{ action('SpeciesController@index') }}">Voltar</a>
+            <a class="btn btn-primary mt-2" href="{{ action('AccreditedController@index') }}">Voltar</a>
     </div>
 </div>
 @stop

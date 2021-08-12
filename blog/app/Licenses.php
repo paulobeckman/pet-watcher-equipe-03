@@ -7,4 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class Licenses extends Model
 {
     protected $table = 'licenses';
+    protected $fillable = [
+        'date_license', 
+        'date_due',
+        'date_revocation',
+        'id_accredited'
+    ];
+    public function license()
+    {
+        return $this->belongsTo(Accredited::class,'id_accredited', 'id');
+    }
+
 }

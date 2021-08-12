@@ -19,7 +19,7 @@ class CreateLicensesTable extends Migration
             $table->dateTime('date_due');
             $table->dateTime('date_revocation');
 
-            $table->bigInteger('id_accredited')->unsigned();;
+            $table->bigInteger('id_accredited')->unsigned();
             $table->foreign('id_accredited')->references('id')->on('accrediteds')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });

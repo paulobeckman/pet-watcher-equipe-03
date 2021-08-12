@@ -23,6 +23,12 @@
                     <a class="nav-link" href="{{url('species')}}">Especies</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{{url('accredited')}}">Credencial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url('license')}}">Licenças</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{{route('change_password')}}">Configurações</a>
                 </li>
                 @endif
