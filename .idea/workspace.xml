@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="778b357f-8962-4936-b8a1-fa4c3f253302" name="Default Changelist" comment="[Database]&#10;Tabelas do Banco de Dados.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="778b357f-8962-4936-b8a1-fa4c3f253302" name="Default Changelist" comment="[Licenses/Accredited]&#10;Criando Crud das Tabela Licenças e Credenciadas.&#10;Com Controller e rotas feitos." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,6 +165,7 @@
       <workItem from="1628634995146" duration="93000" />
       <workItem from="1628637599140" duration="957000" />
       <workItem from="1628639461673" duration="80000" />
+      <workItem from="1628733668042" duration="274000" />
     </task>
     <task id="LOCAL-00001" summary="[Criando o projeto]&#10;Projeto inicial Laravel.">
       <created>1628035031987</created>
@@ -224,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628639520232</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[Licenses/Accredited]&#10;Criando Crud das Tabela Licenças e Credenciadas.&#10;Com Controller e rotas feitos.">
+      <created>1628733887075</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1628733887075</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +255,7 @@
     <MESSAGE value="[Login]&#10;Ajuste na tela de Login" />
     <MESSAGE value="[README.md]&#10;atualização" />
     <MESSAGE value="[Database]&#10;Tabelas do Banco de Dados." />
-    <option name="LAST_COMMIT_MESSAGE" value="[Database]&#10;Tabelas do Banco de Dados." />
+    <MESSAGE value="[Licenses/Accredited]&#10;Criando Crud das Tabela Licenças e Credenciadas.&#10;Com Controller e rotas feitos." />
+    <option name="LAST_COMMIT_MESSAGE" value="[Licenses/Accredited]&#10;Criando Crud das Tabela Licenças e Credenciadas.&#10;Com Controller e rotas feitos." />
   </component>
 </project>
