@@ -12,8 +12,8 @@ class HomeController extends Controller
      *
      * @return Response
      */
-    public function index()
-    {
-        return view('home');
-    }
+    // public function index()
+    // {
+    //     return view('home');
+    // }
 }

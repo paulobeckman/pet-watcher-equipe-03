@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('dashboard')
 
 @section('content')
 
 <div class="mt-5 d-flex justify-content-center">
     <div class="card col-12 col-sm-11 col-md-8 col-lg-6 col-xl-5">
         <div class="card-header">
-           Credencial
+           a
         </div>
         <div class="card-body">
             <div class="row">
@@ -26,7 +26,7 @@
             </div>
             <div class="row">
                 <div class="col-6">
-                Inscrição Estadual
+                state_registration
                 </div>
                 <div class="col-6">
                     {{ $accredited->state_registration }}
@@ -34,28 +34,28 @@
             </div>
             <div class="row">
                 <div class="col-6">
-                Razão Social
+                corporate_reason
                 </div>
                 <div class="col-6">
                     {{ $accredited->corporate_reason }}
                 </div>
             </div><div class="row">
                 <div class="col-6">
-                Telefone
+                phone
                 </div>
                 <div class="col-6">
                     {{ $accredited->phone }}
                 </div>
             </div><div class="row">
                 <div class="col-6">
-                Email
+                email
                 </div>
                 <div class="col-6">
                     {{ $accredited->email }}
                 </div>
             </div><div class="row">
                 <div class="col-6">
-                Endereço
+                address
                 </div>
                 <div class="col-6">
                     {{ $accredited->address }}

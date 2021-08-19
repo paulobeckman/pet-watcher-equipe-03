@@ -13,8 +13,7 @@ class Accredited extends Model
         'corporate_reason',
         'phone',
         'email',
-        'address',
-        'status'
+        'address'
     ];
     public function accredited()
     {

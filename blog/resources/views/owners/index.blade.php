@@ -44,31 +44,42 @@
 </head>
 
 
-<a class="btn btn-primary mt-3" href="{{ route('nova_credencial') }}">Nova Credencial</a>
+<a class="btn btn-primary mt-3" href="{{ route('novo_proprietario') }}">Novo Proprietário</a>
 <table class="table border mt-2">
     <thead>
         <tr>
             <th>ID</th>
-            <th>CNPJ</th>
-            <th>Ações</th>
+            <th>Tipo Pessoa</th>
+            <th>Cpf / CNPJ</th>
+            <th>Nome Completo</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Endereço</th>
 
         </tr>
     </thead>
     <tbody>
-        @foreach($accrediteds as $accredited)
+        @foreach($owners as $owners)
         <tr>
-            <td>{{ $accredited->id }}</td>
-            <td>{{ $accredited->cnpj }}</td>
+            <td>{{ $owners->id }}</td>
+            <td>{{ $owners->person_type }}</td>
+            <td>{{ $owners->cpf_cnpj }}</td>
+            <td>{{ $owners->full_name }}</td>
+            <td>{{ $owners->email }}</td>
+            <td>{{ $owners->phone }}</td>
+            <td>{{ $owners->address }}</td>
+
             <td>
-                <form action="{{ action('AccreditedController@destroy', $accredited->id) }}" method="post">
-                    <a class="btn btn-success btn-sm" href="/accredited/{{ $accredited->id }}">Ver</a>
-                   
-                    <a class="btn btn-primary btn-sm" href="/accredited/edit/{{ $accredited->id }}">Editar</a>
-                   
+                <form action="{{ action('OwnersController@destroy', $owners->id) }}" method="post">
+                    <a class="btn btn-success btn-sm" href="/owners/{{ $owners->id }}">Ver</a>
+
+                    <a class="btn btn-primary btn-sm" href="/owners/edit/{{ $owners->id }}">Editar</a>
+
+
                     @csrf
                     {{ method_field('delete') }}
-                    
-                    <a class="btn btn-danger btn-sm" href="#" onclick="if (confirm('Apaga &quot;{{ $accredited->cnpj }}&quot;?')) this.parentNode.submit();">Apagar</a>
+
+                    <a class="btn btn-danger btn-sm" href="#" onclick="if (confirm('Apaga &quot;{{ $owners->name }}&quot;?')) this.parentNode.submit();">Apagar</a>
 
                 </form>
             </td>

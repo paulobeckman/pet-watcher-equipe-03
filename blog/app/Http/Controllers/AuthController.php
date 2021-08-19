@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Auth;
 // use Illuminate\Support\Facades\Hash;
 use Session;
 use Hash;
-use Illuminate\Support\Facades\Hash as FacadesHash;
 
 class AuthController extends Controller
 {
@@ -50,8 +49,8 @@ class AuthController extends Controller
         $data = $request->all();
 
         $check = $this->create($data);
-        return redirect('dashboard')->with( 'success_message', 'Ótimo! Você fez login com sucesso' );
-        // return redirect::to("dashboard")->with('success_message', 'Ótimo! Você fez login com sucesso');
+
+        return Redirect::to("dashboard")->with('message', 'Ótimo! Você fez login com sucesso');
     }
 
     public function dashboard()
@@ -92,11 +91,10 @@ class AuthController extends Controller
             'new_password' => 'required|min:6|max:100',
             'confirm_password' => 'required|same:new_password'
         ]);
-        
-        $current_user = auth()->user();
-        
 
-        if (FacadesHash::check($request->old_password, $current_user->password)) {
+        $current_user = auth()->user();
+
+        if (Hash::check($request->old_password, $current_user->password)) {
 
             $current_user->update([
                 'password' => bcrypt($request->new_password)
@@ -107,7 +105,6 @@ class AuthController extends Controller
             return redirect()->back()->with('error', 'A senha antiga não corresponde.');
 
         }
-       
         return view('login');
     }
 }

@@ -33,7 +33,7 @@ class SpeciesController extends Controller
         // $specie = new Species();
         // $specie->name = $request->name;
         // $specie->save();
-        return redirect('species')->with( 'success_message', 'Cadastro efetuado com sucesso!' );
+        return redirect('species');
     }
 
     public function show($id)
@@ -62,7 +62,7 @@ class SpeciesController extends Controller
         // $specie = Species::findOrFail($id);
         // $specie->name = $request->name;
         // $specie->save();
-        return redirect('species')->with( 'success_message', 'Edição efetuada com sucesso!' );
+        return redirect('species');
     }
 
 
@@ -70,6 +70,6 @@ class SpeciesController extends Controller
     {
         $specie = Species::findOrFail($id);
         $specie->delete();
-        return redirect('species')->with( 'success_message', 'Cadastro excluído com sucesso!' );
+        return redirect('species');
     }
 }

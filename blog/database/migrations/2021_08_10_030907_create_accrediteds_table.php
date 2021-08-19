@@ -21,7 +21,6 @@ class CreateAccreditedsTable extends Migration
             $table->string('phone');
             $table->string('email');
             $table->string('address');
-            $table->integer('status')->default(1);
             $table->timestamps();
         });
     }

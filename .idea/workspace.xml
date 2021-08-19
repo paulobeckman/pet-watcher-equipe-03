@@ -4,7 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="778b357f-8962-4936-b8a1-fa4c3f253302" name="Default Changelist" comment="[Licenses/Accredited]&#10;Criando Crud das Tabela Licenças e Credenciadas.&#10;Com Controller e rotas feitos." />
+    <list default="true" id="778b357f-8962-4936-b8a1-fa4c3f253302" name="Default Changelist" comment="[Licenses/Accredited]&#10;Criando Crud das Tabela Licenças e Credenciadas.&#10;Com Controller e rotas feitos.">
+      <change beforePath="$PROJECT_DIR$/blog/app/Accredited.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Accredited.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/Employees.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Employees.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/AccreditedController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/AccreditedController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/LicenseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/LicenseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/SpeciesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/SpeciesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/Licenses.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Licenses.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/owners.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/owners.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/blog/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/database/migrations/2021_08_10_030907_create_accrediteds_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/database/migrations/2021_08_10_030907_create_accrediteds_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/accredited/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/accredited/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/accredited/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/accredited/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/accredited/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/accredited/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/accredited/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/accredited/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/licenses/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/licenses/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/licenses/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/licenses/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/licenses/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/licenses/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/licenses/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/licenses/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/settings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/settings.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/species/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/species/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/species/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/species/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/species/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/species/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/species/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/species/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -11,8 +11,7 @@ class Licenses extends Model
         'date_license', 
         'date_due',
         'date_revocation',
-        'id_accredited',
-        'id_user'
+        'id_accredited'
     ];
     public function license()
     {
