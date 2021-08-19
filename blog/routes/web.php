@@ -39,6 +39,11 @@ Route::get('home', 'HomeController@index');
 Route::get('owners', 'OwnersController@index');
 Route::get('owners/create', 'OwnersController@create');
 Route::post('owners/create', 'OwnersController@store')->name('novo_proprietario');
+Route::get('owners/{id}', 'OwnersController@show');
+Route::get('owners/edit/{id}', 'OwnersController@edit');
+Route::post('owners/edit/{id}', 'OwnersController@update');
+Route::delete('owners/{id}', 'OwnersController@destroy');
+
 
 Route::get('species', 'SpeciesController@index');
 Route::get('species/create', 'SpeciesController@create');

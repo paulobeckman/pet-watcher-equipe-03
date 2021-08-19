@@ -70,7 +70,7 @@
             <td>{{ $owners->address }}</td>
 
             <td>
-                <form action="{ }" method="post">
+                <form action="{{ action('OwnersController@destroy', $owners->id) }}" method="post">
                     <a class="btn btn-success btn-sm" href="/owners/{{ $owners->id }}">Ver</a>
 
                     <a class="btn btn-primary btn-sm" href="/owners/edit/{{ $owners->id }}">Editar</a>

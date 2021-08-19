@@ -31,4 +31,37 @@ class OwnersController extends Controller
              return redirect('owners');
          }
 
+         public function show($id)
+             {
+                 $owners = Owners::findOrFail($id);
+
+                 return view('owners.show', ['owners' => $owners]);
+             }
+
+
+             public function edit($id)
+             {
+                 $owners = Owners::findOrFail($id);
+                 return view('owners.edit', ['owners' => $owners]);
+             }
+
+
+             public function update(Request $request, $id)
+             {
+
+                 $owners = Owners::findOrFail($id);
+                 $owners->fill($request->all());
+                 $owners->save();
+
+                 return redirect('owners')->with( 'success_message', 'Edição efetuada com sucesso!' );
+             }
+
+
+             public function destroy($id)
+             {
+                 $owners = Owners::findOrFail($id);
+                 $owners->delete();
+                 return redirect('owners')->with( 'success_message', 'Cadastro excluído com sucesso!' );
+             }
+
 }
