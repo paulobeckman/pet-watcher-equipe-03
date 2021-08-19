@@ -1,5 +1,4 @@
-<!DOCTYPE HTML>
-@extends('dashboard')
+@extends('layouts.app')
 
 @section('content')
 <div class="card mt-3">
@@ -17,9 +16,9 @@
             <input class="form-control " type="text" name="corporate_reason" id="corporate_reason"> 
             <label for="phone" class="form-label">Telefone</label>
             <input class="form-control " type="text" name="phone" id="phone"> 
-            <label for="email" class="form-label">email</label>
+            <label for="email" class="form-label">Email</label>
             <input class="form-control " type="text" name="email" id="email"> 
-            <label for="address" class="form-label">endereço</label>
+            <label for="address" class="form-label">Endereço</label>
             <input class="form-control " type="text" name="address" id="address">
 
             <input class="btn btn-primary mt-2" type="submit" value="Enviar">

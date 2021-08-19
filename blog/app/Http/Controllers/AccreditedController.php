@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Accredited;
+use App\User;
 use Illuminate\Http\Request;
 
 class AccreditedController extends Controller
@@ -30,10 +31,13 @@ class AccreditedController extends Controller
         $accredited = Accredited::create($request->all());
         $accredited->save();
 
-        // $specie = new Species();
-        // $specie->name = $request->name;
-        // $specie->save();
-        return redirect('accredited');
+        $accredited = new User();
+        $accredited->name = $request->corporate_reason;
+        $accredited->email = $request->cnpj;
+        $accredited->password = rand(6, 9);
+        $accredited->save();
+
+        return redirect('accredited')->with('success_message', 'Cadastro efetuado com sucesso!');
     }
 
     public function show($id)
@@ -58,7 +62,7 @@ class AccreditedController extends Controller
         $accrediteds = Accredited::findOrFail($id);
         $accrediteds->fill($request->all());
         $accrediteds->save();
-        return redirect('accredited');
+        return redirect('accredited')->with('success_message', 'Edição efetuada com sucesso!');
     }
 
 
@@ -66,6 +70,23 @@ class AccreditedController extends Controller
     {
         $accredited = Accredited::findOrFail($id);
         $accredited->delete();
-        return redirect('accredited');
+        return redirect('accredited')->with('success_message', 'Cadastro excluído com sucesso!');
+    }
+
+    // public function updateStatus(Request $request)
+    // {
+    //     $accredited = Accredited::findOrFail($request->id);
+    //     $accredited->status = $request->status;
+    //     $accredited->save();
+    //     return response()->json(['success' => 1]);
+    // }
+    public function status ( Accredited $accredited ) {
+        if ( $accredited->status == 0 ) {
+            $accredited->status = 1;
+        } else {
+            $accredited->status = 0;
+        }
+        $accredited->save();
+        return response()->json( [ 'success' => 1 ] );
     }
 }

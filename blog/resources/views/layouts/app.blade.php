@@ -42,6 +42,9 @@
                     <ul class="navbar-nav mr-auto">
                         @if(auth()->check())
                         <li class="nav-item">
+                            <a class="nav-link" href="{{url('owners')}}">Proprietário</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="{{url('species')}}">Especies</a>
                         </li>
                         <li class="nav-item">

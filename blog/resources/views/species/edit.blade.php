@@ -1,4 +1,4 @@
-@extends('dashboard')
+@extends('layouts.app')
 
 @section('content')
     <div class="card mt-3">
