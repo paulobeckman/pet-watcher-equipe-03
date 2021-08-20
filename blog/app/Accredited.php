@@ -3,9 +3,11 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Spatie\Permission\Traits\HasRoles;
 
 class Accredited extends Model
 {
+    use HasRoles;
     protected $table = 'accrediteds';
     protected $fillable = [
         'cnpj',
@@ -20,4 +22,6 @@ class Accredited extends Model
     {
         return $this->hasMany(Licenses::class,'id_accredited', 'id');
     }
+   
+
 }

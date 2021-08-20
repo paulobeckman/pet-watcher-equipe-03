@@ -2,12 +2,6 @@
 
 @section('content')
 
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
 <div>
     <script>
         $(document).ready(function() {
@@ -48,14 +42,14 @@
                 <td>{{ $employee->email }}</td>
                 <td>{{ $employee->address }}</td>
                 <td>
-                    <form action="{{ action('EmployeesController@destroy', $employee->id) }}" method="post">
-                        <a class="btn btn-success btn-sm" href="/employees/{{ $employee->id }}">Ver</a>
+                    <form action="{{ action('EmployeeController@destroy', $employee->id) }}" method="post">
+                        <a class="btn btn-success btn-sm" href="/employee/{{ $employee->id }}">Ver</a>
 
-                        <a class="btn btn-primary btn-sm" href="/employees/edit/{{ $employee->id }}">Editar</a>
+                        <a class="btn btn-primary btn-sm" href="/employee/edit/{{ $employee->id }}">Editar</a>
 
-                        @csrf
+                        <!-- @csrf
                         {{ method_field('delete') }}
-                        <a class="btn btn-danger btn-sm" href="#" onclick="if (confirm('Apaga &quot;{{ $employee->name }}&quot;?')) this.parentNode.submit();">Apagar</a>
+                        <a class="btn btn-danger btn-sm" href="#" onclick="if (confirm('Apaga &quot;{{ $employee->name }}&quot;?')) this.parentNode.submit();">Apagar</a> -->
 
                     </form>
                 </td>

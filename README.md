@@ -29,3 +29,18 @@ php artisan db:seed
 ```bash
 php artisan serve
 ```
+# Permissão de acesso
+Para facilitar o uso de níveis de acesso no Laravel, usaremos a lib Spatie.
+```bash
+composer require spatie/laravel-permission
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+php artisan optimize:clear
+php artisan migrate
+```
+
+Para criar permissões podemos usar comandos do Laravel e Spatie no terminal de comandos:
+```bash
+php artisan permission:create-permission "admin"
+php artisan permission:create-permission "user"
+php artisan permission:create-permission "employee_user"
+```

@@ -13,6 +13,12 @@ class Employees extends Model
         'phone',
         'email',
         'address' ,
-        'id_accredited'
+        'id_accredited',
+
     ];
+
+    public function employees()
+    {
+        return $this->hasMany(User::class,'id_accredited', 'id');
+    }
 }

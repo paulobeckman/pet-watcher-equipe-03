@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Accredited;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Hash;
 
 class AccreditedController extends Controller
 {
@@ -33,9 +35,11 @@ class AccreditedController extends Controller
 
         $accredited = new User();
         $accredited->name = $request->corporate_reason;
-        $accredited->email = $request->cnpj;
-        $accredited->password = rand(6, 9);
+        $accredited->email = $request->email;
+        $accredited->password = Hash::make($request->password);
         $accredited->save();
+        $accredited->givePermissionTo('user');
+
 
         return redirect('accredited')->with('success_message', 'Cadastro efetuado com sucesso!');
     }
@@ -73,20 +77,22 @@ class AccreditedController extends Controller
         return redirect('accredited')->with('success_message', 'Cadastro excluído com sucesso!');
     }
 
-    // public function updateStatus(Request $request)
-    // {
-    //     $accredited = Accredited::findOrFail($request->id);
-    //     $accredited->status = $request->status;
-    //     $accredited->save();
-    //     return response()->json(['success' => 1]);
-    // }
-    public function status ( Accredited $accredited ) {
-        if ( $accredited->status == 0 ) {
-            $accredited->status = 1;
-        } else {
-            $accredited->status = 0;
-        }
+    public function status(Request $request)
+    {
+        $accredited = Accredited::findOrFail($request->id);
+        $accredited->status = $request->status;
         $accredited->save();
-        return response()->json( [ 'success' => 1 ] );
+        return response()->json(['success' => 1]);
     }
+    // public function status ( Accredited $accredited ) {
+    //     if ( $accredited->status == 0 ) {
+    //         $accredited->status = 1;
+    //     } else {
+    //         $accredited->status = 0;
+    //     }
+    //     $accredited->save();
+    //     return response()->json( [ 'success' => 1 ] );
+    // }
+
+
 }

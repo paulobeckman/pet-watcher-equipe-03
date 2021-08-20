@@ -11,11 +11,11 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script> -->
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -24,6 +24,10 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 <body>
@@ -41,9 +45,15 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         @if(auth()->check())
+                        @can('user')
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('employee')}}">Funcionarios</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('owners')}}">Proprietário</a>
                         </li>
+                        @elsecan('admin')
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('species')}}">Especies</a>
                         </li>
@@ -53,13 +63,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('license')}}">Licenças</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{url('employee')}}">Funcionarios</a>
-                        </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('change_password')}}">Configurações</a>
                         </li>
+                        @endcan
                         @endif
                     </ul>
 

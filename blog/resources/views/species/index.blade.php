@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+@can('admin')
 <div>
     <script>
         $(document).ready(function() {
@@ -59,4 +59,5 @@
         </tbody>
     </table>
 </div>
+@endcan
 @stop

@@ -25,8 +25,8 @@ class CreateEmployeesTable extends Migration
 
             $table->bigInteger('id_accredited')->unsigned();
             $table->foreign('id_accredited')->references('id')->on('accrediteds')->onDelete('cascade')->onUpdate('cascade');
-            $table->bigInteger('id_user')->unsigned();
-            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
+            // $table->bigInteger('id_user')->unsigned();
+            // $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

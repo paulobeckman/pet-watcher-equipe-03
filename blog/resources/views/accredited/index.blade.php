@@ -10,6 +10,13 @@
                 $(".alert").alert('close');
             }, 3000);
         });
+        let elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+
+        elems.forEach(function(html) {
+            let switchery = new Switchery(html, {
+                size: 'small'
+            });
+        });
         $(document).ready(function() {
             $('.js-switch').change(function() {
                 let status = $(this).prop('checked') === true ? 1 : 0;
@@ -17,10 +24,10 @@
                 $.ajax({
                     type: "GET",
                     dataType: "json",
-                    
+                    url: "{{ route('users.update.status') }}",
                     data: {
                         'status': status,
-                        'id': userId
+                        'user_id': userId
                     },
                     success: function(data) {
                         console.log(data.message);
@@ -38,12 +45,12 @@
         @endif
     </div>
     @if ( !count( $accrediteds ) )
-                <div class="list-subitem text-center">
-                    <h2 class="mb-3">Nenhum Licença cadastrada.</h2>
-                    <a class="btn btn-primary mt-3" href="{{ route('nova_credencial') }}">Add</a></br>
-                    <span>Cadastre o primeiro</span></a>
-                </div>
-            @else
+    <div class="list-subitem text-center">
+        <h2 class="mb-3">Nenhum Licença cadastrada.</h2>
+        <a class="btn btn-primary mt-3" href="{{ route('nova_credencial') }}">Add</a></br>
+        <span>Cadastre o primeiro</span></a>
+    </div>
+    @else
 
     <a class="btn btn-primary mt-3" href="{{ route('nova_credencial') }}">Nova Credencial</a>
     <table class="table border mt-2">
@@ -52,6 +59,7 @@
                 <th>ID</th>
                 <th>CNPJ</th>
                 <th>Ações</th>
+                <th>Status</th>
 
             </tr>
         </thead>
@@ -65,33 +73,27 @@
                         <a class="btn btn-success btn-sm" href="/accredited/{{ $accredited->id }}">Ver</a>
 
                         <a class="btn btn-primary btn-sm" href="/accredited/edit/{{ $accredited->id }}">Editar</a>
+                <td>
+                    <label class="form-check-label" for="status">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" title="status" id="status" value="{{ $accredited->id }}" {{ $accredited->status ? ' checked' : '' }} />
+                            <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                        </div>
+                </td>
 
-                        <label class="form-check-label" for="status">
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" title="Status" id="status" value="{{ $accredited->id }}" {{ $accredited->status ? ' checked' : '' }} />
-                                <label class="form-check-label" for="flexSwitchCheckDefault">Status</label>
-                            </div>
 
-                        </label>
-                        <input type="checkbox" data-id="{{ $accredited->id }}" name="status" class="js-switch" {{ $accredited->status == 1 ? 'checked' : '' }}>
 
-                        <td class="actions">
-                                        <label class="slider slider-inline" title="Status">
-                                            <input type="checkbox" class="change-status" value="{{ $accredited->id }}"{{ $accredited->status ? ' checked' : '' }}>
-                                            <span></span>
-                                        </label>
-                                    </td>
-
-                        <!-- @csrf
+                <!-- @csrf
                         {{ method_field('delete') }}
 
                         <a class="btn btn-danger btn-sm" href="#" onclick="if (confirm('Apaga &quot;{{ $accredited->cnpj }}&quot;?')) this.parentNode.submit();">Apagar</a> -->
 
-                    </form>
+                </form>
                 </td>
                 @endforeach
-               
+
         </tbody>
     </table> @endif
 </div>
+
 @stop

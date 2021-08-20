@@ -4,35 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="778b357f-8962-4936-b8a1-fa4c3f253302" name="Default Changelist" comment="[Licenses/Accredited]&#10;Criando Crud das Tabela Licenças e Credenciadas.&#10;Com Controller e rotas feitos.">
+    <list default="true" id="778b357f-8962-4936-b8a1-fa4c3f253302" name="Default Changelist" comment="[Features]&#10;C">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/app/Accredited.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Accredited.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/app/Employees.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Employees.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/AccreditedController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/AccreditedController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/LicenseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/LicenseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/SpeciesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/SpeciesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/Licenses.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Licenses.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/owners.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/owners.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/EmployeeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/EmployeeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/OwnersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/OwnersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/blog/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/database/migrations/2021_08_10_030907_create_accrediteds_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/database/migrations/2021_08_10_030907_create_accrediteds_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/database/migrations/2021_08_10_031024_create_employees_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/database/migrations/2021_08_10_031024_create_employees_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/resources/views/accredited/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/accredited/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/resources/views/accredited/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/accredited/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/resources/views/accredited/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/accredited/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/accredited/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/accredited/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/licenses/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/licenses/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/licenses/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/licenses/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/licenses/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/licenses/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/licenses/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/licenses/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/settings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/settings.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/species/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/species/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/species/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/species/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/employees/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/employees/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/employees/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/employees/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/employees/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/employees/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/resources/views/species/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/species/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/species/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/species/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,6 +138,7 @@
       <path value="$PROJECT_DIR$/blog/vendor/sebastian/comparator" />
       <path value="$PROJECT_DIR$/blog/vendor/sebastian/diff" />
       <path value="$PROJECT_DIR$/blog/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/blog/vendor/spatie/laravel-permission" />
     </include_path>
   </component>
   <component name="ProjectId" id="1wErzitJlhEnecIspaXzF4PXJd4" />
@@ -196,6 +192,10 @@
       <workItem from="1628637599140" duration="957000" />
       <workItem from="1628639461673" duration="80000" />
       <workItem from="1628733668042" duration="274000" />
+      <workItem from="1629087967570" duration="147000" />
+      <workItem from="1629137182977" duration="113000" />
+      <workItem from="1629378365652" duration="8206000" />
+      <workItem from="1629422933920" duration="297000" />
     </task>
     <task id="LOCAL-00001" summary="[Criando o projeto]&#10;Projeto inicial Laravel.">
       <created>1628035031987</created>
@@ -260,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628733887075</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="[Features]&#10;Modificação nas view.&#10;Alteração no login.">
+      <created>1629088094881</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1629088094881</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +293,7 @@
     <MESSAGE value="[README.md]&#10;atualização" />
     <MESSAGE value="[Database]&#10;Tabelas do Banco de Dados." />
     <MESSAGE value="[Licenses/Accredited]&#10;Criando Crud das Tabela Licenças e Credenciadas.&#10;Com Controller e rotas feitos." />
-    <option name="LAST_COMMIT_MESSAGE" value="[Licenses/Accredited]&#10;Criando Crud das Tabela Licenças e Credenciadas.&#10;Com Controller e rotas feitos." />
+    <MESSAGE value="[Features]&#10;Modificação nas view.&#10;Alteração no login." />
+    <option name="LAST_COMMIT_MESSAGE" value="[Features]&#10;Modificação nas view.&#10;Alteração no login." />
   </component>
 </project>

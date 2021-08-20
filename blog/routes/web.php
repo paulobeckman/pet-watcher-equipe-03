@@ -18,8 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('register', 'Auth\RegisterController@register');
 Route::post('register', 'Auth\RegisterController@store')->name('register');
+
 
 Route::get('login', 'Auth\LoginController@login');
 Route::post('login', 'Auth\LoginController@store')->name('login');
@@ -45,6 +47,7 @@ Route::post('owners/edit/{id}', 'OwnersController@update');
 Route::delete('owners/{id}', 'OwnersController@destroy');
 
 
+
 Route::get('species', 'SpeciesController@index');
 Route::get('species/create', 'SpeciesController@create');
 Route::post('species/create', 'SpeciesController@store')->name('nova_especie');
@@ -58,7 +61,8 @@ Route::delete('species/{id}', 'SpeciesController@destroy');
 Route::get('settings/reset-password', 'Auth\ResetPasswordController@getPassword')->name('change_password');
 Route::post('settings/reset-password', 'Auth\ResetPasswordController@updatePassword')->name('update_password');
 
-Route::get('accredited', 'AccreditedController@index');
+Route::get('accredited', 'AccreditedController@index')->name('users.update.status');
+Route::get('accredited/{accredited}/status', 'AccreditedController@status')->name('accredited.status');
 Route::get('accredited/create', 'AccreditedController@create');
 Route::post('accredited/create', 'AccreditedController@store')->name('nova_credencial');
 Route::get('accredited/{id}', 'AccreditedController@show');
@@ -81,5 +85,3 @@ Route::get('employee/{id}', 'EmployeeController@show');
 Route::get('employee/edit/{id}', 'EmployeeController@edit');
 Route::post('employee/edit/{id}', 'EmployeeController@update');
 Route::delete('employee/{id}', 'EmployeeController@destroy');
-
-

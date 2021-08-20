@@ -6,7 +6,7 @@
         Editar Especie
     </div>
     <div class="card-body">
-        <form action="{{ action('SpeciesController@update', $specie->id) }}" method="post">
+        <form action="{{ action('EmployeeController@update', $employee->id) }}" method="post">
             @csrf
 
             <label for="name" class="form-label">Nome Completo</label>
@@ -32,7 +32,7 @@
         </form>
     </div>
     <div class="card-footer">
-        <a class="btn btn-primary mt-2" href="{{ action('SpeciesController@index') }}">Voltar</a>
+        <a class="btn btn-primary mt-2" href="{{ action('EmployeeController@index') }}">Voltar</a>
     </div>
 </div>
 @stop
