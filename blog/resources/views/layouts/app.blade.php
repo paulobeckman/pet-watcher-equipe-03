@@ -63,6 +63,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('license')}}">Licenças</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('animals')}}">Animais</a>
+                        </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('change_password')}}">Configurações</a>

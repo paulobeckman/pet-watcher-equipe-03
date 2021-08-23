@@ -85,3 +85,10 @@ Route::get('employee/{id}', 'EmployeeController@show');
 Route::get('employee/edit/{id}', 'EmployeeController@edit');
 Route::post('employee/edit/{id}', 'EmployeeController@update');
 Route::delete('employee/{id}', 'EmployeeController@destroy');
+
+Route::get('animals', 'AnimalsController@index');
+Route::get('animals/create', 'AnimalsController@create');
+Route::post('animals/create', 'AnimalsController@store')->name('novo_animal');
+Route::get('animals/{id}', 'AnimalsController@show');
+Route::get('animals/edit/{id}', 'AnimalsController@edit');
+Route::post('animals/edit/{id}', 'AnimalsController@update');
