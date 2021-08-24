@@ -77,6 +77,7 @@ Route::get('license/{id}', 'LicenseController@show');
 Route::get('license/edit/{id}', 'LicenseController@edit');
 Route::post('license/edit/{id}', 'LicenseController@update');
 Route::delete('license/{id}', 'LicenseController@destroy');
+//Route::get('license/{id}','LicenseController@revogar')->name('licenca.revogar');
 
 Route::get('employee', 'EmployeeController@index');
 Route::get('employee/create', 'EmployeeController@create');

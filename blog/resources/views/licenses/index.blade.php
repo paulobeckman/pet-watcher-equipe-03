@@ -25,10 +25,12 @@
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Data License</th>
-                <th>Data Due</th>
-                <th>Date Revocation</th>
+                <th>Data de Licenciamento</th>
+                <th>Data de Vencimento</th>
+                <th>Data de Revogação</th>
                 <th>CNPJ</th>
+                <th>Ações</th>
+                <th>Revogação</th>
 
             </tr>
         </thead>
@@ -54,6 +56,9 @@
                         <a class="btn btn-danger btn-sm" href="#" onclick="if (confirm('Apaga &quot;{{ $license->name }}&quot;?')) this.parentNode.submit();">Apagar</a>
 
                     </form>
+                </td>
+                <td>
+                    <button class="btn btn-warning btn-sm" }>Revogar</button>
                 </td>
                 @endforeach
         </tbody>

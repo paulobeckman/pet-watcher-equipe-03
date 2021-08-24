@@ -4,30 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="778b357f-8962-4936-b8a1-fa4c3f253302" name="Default Changelist" comment="[Features]&#10;C">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="778b357f-8962-4936-b8a1-fa4c3f253302" name="Default Changelist" comment="[Features]&#10;Funcionarios.&#10;Niveis de acesso admin, credenciada e funcionario.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/Accredited.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Accredited.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/Employees.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Employees.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/AccreditedController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/AccreditedController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/EmployeeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/EmployeeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/OwnersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/OwnersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/blog/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/database/migrations/2021_08_10_031024_create_employees_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/database/migrations/2021_08_10_031024_create_employees_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/accredited/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/accredited/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/accredited/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/accredited/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/accredited/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/accredited/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/employees/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/employees/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/employees/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/employees/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/employees/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/employees/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/LicenseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/LicenseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/animals/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/animals/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/animals/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/animals/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/species/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/species/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/licenses/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/licenses/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/licenses/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/licenses/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/licenses/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/licenses/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/login.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/register.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +183,8 @@
       <workItem from="1629087967570" duration="147000" />
       <workItem from="1629137182977" duration="113000" />
       <workItem from="1629378365652" duration="8206000" />
-      <workItem from="1629422933920" duration="297000" />
+      <workItem from="1629422933920" duration="449000" />
+      <workItem from="1629832784866" duration="4986000" />
     </task>
     <task id="LOCAL-00001" summary="[Criando o projeto]&#10;Projeto inicial Laravel.">
       <created>1628035031987</created>
@@ -267,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629088094881</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[Features]&#10;Funcionarios.&#10;Niveis de acesso admin, credenciada e funcionario.">
+      <created>1629423371512</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1629423371512</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +290,7 @@
     <MESSAGE value="[Database]&#10;Tabelas do Banco de Dados." />
     <MESSAGE value="[Licenses/Accredited]&#10;Criando Crud das Tabela Licenças e Credenciadas.&#10;Com Controller e rotas feitos." />
     <MESSAGE value="[Features]&#10;Modificação nas view.&#10;Alteração no login." />
-    <option name="LAST_COMMIT_MESSAGE" value="[Features]&#10;Modificação nas view.&#10;Alteração no login." />
+    <MESSAGE value="[Features]&#10;Funcionarios.&#10;Niveis de acesso admin, credenciada e funcionario." />
+    <option name="LAST_COMMIT_MESSAGE" value="[Features]&#10;Funcionarios.&#10;Niveis de acesso admin, credenciada e funcionario." />
   </component>
 </project>

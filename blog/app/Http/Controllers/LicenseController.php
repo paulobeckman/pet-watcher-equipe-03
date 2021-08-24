@@ -15,8 +15,8 @@ class LicenseController extends Controller
 
     public function index()
     {
-       
-        $licenses = Licenses::with('license')->get(); 
+
+        $licenses = Licenses::with('license')->get();
         $licenses = Licenses::all();
         return view('licenses.index', compact('licenses'));
     }
@@ -25,12 +25,12 @@ class LicenseController extends Controller
     public function create()
     {
         $data = Accredited::all();
-        $licenses = Licenses::with('license')->get(); 
-        $licenses = Licenses::all(); 
+        $licenses = Licenses::with('license')->get();
+        $licenses = Licenses::all();
         // $selectedLicenses =Licenses::all()->cnpj;
-        
+
         //  $licenses = Accredited::all('cnpj', 'id');
-        
+
         return view('licenses.create',['data'=>$data], compact('licenses'));
     }
 
@@ -45,7 +45,7 @@ class LicenseController extends Controller
     public function show($id)
     {
         $license = Licenses::findOrFail($id);
-       
+
         return view('licenses.show', ['license' => $license]);
     }
 
@@ -74,4 +74,12 @@ class LicenseController extends Controller
         $license->delete();
         return redirect('license')->with( 'success_message', 'Cadastro excluído com sucesso!' );
     }
+//    public function revogar(Request $request)
+//    {
+//        $id = $request->idlicenca;
+//        $license = Licenses::find($id);
+//        $license->date_revocation = now();
+//        $license->save();
+//        return back();
+//    }
 }

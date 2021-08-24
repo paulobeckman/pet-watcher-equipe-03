@@ -61,9 +61,9 @@
                                     {{ __('Login') }}
                                 </button>
 
-                                <a class="btn btn-link" href="/forget-password">
-                                    Forgot Your Password?
-                                </a>
+{{--                                <a class="btn btn-link" href="/forget-password">--}}
+{{--                                    Forgot Your Password?--}}
+{{--                                </a>--}}
                             </div>
                         </div>
                     </form>

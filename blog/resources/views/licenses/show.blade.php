@@ -9,7 +9,7 @@
         </div>
         <div class="card-body">
             <div class="row">
-                <div class="col-3">
+                <div class="col-6">
                     ID
                 </div>
                 <div class="col-6">
@@ -17,32 +17,32 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-3">
-                    date license
+                <div class="col-6">
+                    Data de Licenciamento
                 </div>
                 <div class="col-6">
                     {{ $license->date_license }}
                 </div>
             </div>
             <div class="row">
-                <div class="col-3">
-                    date due
+                <div class="col-6">
+                    Data de Vencimento
                 </div>
                 <div class="col-6">
                     {{ $license->date_due }}
                 </div>
             </div>
             <div class="row">
-                <div class="col-3">
-                    date revocation
+                <div class="col-6">
+                    Data de Revogação
                 </div>
                 <div class="col-6">
                     {{ $license->date_revocation }}
                 </div>
             </div>
             <div class="row">
-                <div class="col-3">
-                    accredited
+                <div class="col-6">
+                    CNPJ
                 </div>
                 <div class="col-6">
                     {{ $license->id_accredited }}
