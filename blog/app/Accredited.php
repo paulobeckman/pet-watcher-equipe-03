@@ -18,10 +18,14 @@ class Accredited extends Model
         'address',
         'status'
     ];
-    public function accredited()
-    {
-        return $this->hasMany(Licenses::class,'id_accredited', 'id');
-    }
+    // public function accredited()
+    // {
+    //     return $this->hasMany(Licenses::class,'id_accredited', 'id');
+    // }
+    // public function reponsible()
+    // {
+    //     return $this->hasMany(owners::class,'id_accredited_responsible', 'id');
+    // }
    
 
 }

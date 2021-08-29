@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 
 <div>
     <script>
@@ -10,34 +13,26 @@
                 $(".alert").alert('close');
             }, 3000);
         });
-        let elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
-
-        elems.forEach(function(html) {
-            let switchery = new Switchery(html, {
-                size: 'small'
-            });
-        });
-        $(document).ready(function() {
-            $('.js-switch').change(function() {
-                let status = $(this).prop('checked') === true ? 1 : 0;
-                let userId = $(this).data('id');
+        $(function() {
+            $('.toggle-class').change(function() {
+                var status = $(this).prop('checked') == true ? 1 : 0;
+                var id = $(this).data('id');
+                console.log(status);
                 $.ajax({
                     type: "GET",
                     dataType: "json",
-                    url: "{{ route('users.update.status') }}",
+                    url: '/userChangeStatus',
                     data: {
                         'status': status,
-                        'user_id': userId
+                        'id': id
                     },
                     success: function(data) {
-                        console.log(data.message);
+                        console.log(data.success)
                     }
                 });
-            });
-        });
+            })
+        })
     </script>
-    </body>
-
     @if ( session( 'success_message' ) )
     <div class="alert alert-success alert-dismissible fade show">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -60,7 +55,6 @@
                 <th>CNPJ</th>
                 <th>Ações</th>
                 <th>Status</th>
-
             </tr>
         </thead>
         <tbody>
@@ -74,14 +68,8 @@
 
                         <a class="btn btn-primary btn-sm" href="/accredited/edit/{{ $accredited->id }}">Editar</a>
                 <td>
-                    <label class="form-check-label" for="status">
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" title="status" id="status" value="{{ $accredited->id }}" {{ $accredited->status ? ' checked' : '' }} />
-                            <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-                        </div>
+                    <input data-id="{{$accredited->id}}" class="toggle-class" data-size="sm" type="checkbox" data-onstyle="success" data-offstyle="danger" data-toggle="toggle" data-on="Habilitar" data-off="Desabilitar" {{ $accredited->status ? 'checked' : '' }}>
                 </td>
-
-
 
                 <!-- @csrf
                         {{ method_field('delete') }}

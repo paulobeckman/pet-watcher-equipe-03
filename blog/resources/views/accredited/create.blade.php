@@ -20,15 +20,15 @@
                 <input class="form-control " type="text" name="email" id="email">
                 <label for="address" class="form-label">Endereço</label>
                 <input class="form-control " type="text" name="address" id="address">
-                <label class="small mb-1" for="inputPassword">Senha</label>
-                <input class="form-control py-1" id="inputPassword" type="password" name="password"/>
+                <label class="form-label" for="inputPassword">Senha</label>
+                <input class="form-control" id="inputPassword" type="password" name="password"/>
+                <label for="status" class="form-label">Status</label>
                 <div class="form-group select-box">
                     <select id="status" name="status" class="form-control form-control-lg" required>
                         <option value="" disabled></option>
                         <option value="1"{{ isset( $data ) && $data->status == 1 ? ' selected' : '' }}>Ativo</option>
                         <option value="0"{{ isset( $data ) && $data->status == 0? ' selected' : '' }}>Inativo</option>
                     </select>
-                    <label for="target" class="label">Status:</label>
                 </div>
 
                 <input class="btn btn-primary mt-2" type="submit" value="Enviar">

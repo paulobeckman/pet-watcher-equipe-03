@@ -8,9 +8,9 @@ use Illuminate\Foundation\Auth\ResetsPasswords;
 use Illuminate\Http\Request;
 use DB;
 use App\User;
-use Hash;
 use Illuminate\Support\Facades\DB as FacadesDB;
 use Illuminate\Support\Facades\Hash as FacadesHash;
+use Illuminate\Support\Facades\Hash;
 
 class ResetPasswordController extends Controller
 {
@@ -38,6 +38,6 @@ class ResetPasswordController extends Controller
 
         $user->save();
 
-        return view('auth.login')->with('success', 'Senha mudada com sucesso!');
+        return redirect('/');
     }
 }

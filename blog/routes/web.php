@@ -61,8 +61,8 @@ Route::delete('species/{id}', 'SpeciesController@destroy');
 Route::get('settings/reset-password', 'Auth\ResetPasswordController@getPassword')->name('change_password');
 Route::post('settings/reset-password', 'Auth\ResetPasswordController@updatePassword')->name('update_password');
 
-Route::get('accredited', 'AccreditedController@index')->name('users.update.status');
-Route::get('accredited/{accredited}/status', 'AccreditedController@status')->name('accredited.status');
+Route::get('accredited', 'AccreditedController@index');
+Route::get('userChangeStatus', 'AccreditedController@userChangeStatus');
 Route::get('accredited/create', 'AccreditedController@create');
 Route::post('accredited/create', 'AccreditedController@store')->name('nova_credencial');
 Route::get('accredited/{id}', 'AccreditedController@show');
@@ -88,8 +88,21 @@ Route::post('employee/edit/{id}', 'EmployeeController@update');
 Route::delete('employee/{id}', 'EmployeeController@destroy');
 
 Route::get('animals', 'AnimalsController@index');
-Route::get('animals/create', 'AnimalsController@create');
-Route::post('animals/create', 'AnimalsController@store')->name('novo_animal');
-Route::get('animals/{id}', 'AnimalsController@show');
-Route::get('animals/edit/{id}', 'AnimalsController@edit');
-Route::post('animals/edit/{id}', 'AnimalsController@update');
+Route::get('animal/create', 'AnimalsController@create');
+Route::post('animal/create', 'AnimalsController@store')->name('novo_animal');
+Route::get('animal/{id}', 'AnimalsController@show');
+Route::get('animal/edit/{id}', 'AnimalsController@edit');
+Route::post('animal/edit/{id}', 'AnimalsController@update');
+Route::delete('animal/{id}', 'AnimalsController@destroy');
+
+Route::get('pedigree', 'PedigreeController@index');
+Route::get('pedigree/create', 'PedigreeController@create');
+Route::post('pedigree/create', 'PedigreeController@store')->name('new_pedigree');
+Route::get('pedigree/{id}', 'PedigreeController@show');
+Route::get('pedigree/edit/{id}', 'PedigreeController@edit');
+Route::post('pedigree/edit/{id}', 'PedigreeController@update');
+Route::delete('pedigree/{id}', 'PedigreeController@destroy');
+Route::get('pedigree/{pedigree}/status', 'PedigreeController@active')->name('pedigree.status');
+Route::get('pedigree', 'PedigreeController@index');
+
+

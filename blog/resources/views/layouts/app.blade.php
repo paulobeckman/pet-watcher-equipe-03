@@ -60,6 +60,15 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{url('animals')}}">Animais</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{url('employee')}}">Funcionarios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{url('owners')}}">Proprietário</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{url('pedigree')}}">Pedigree</a>
+                            </li>
 
 
                         @elsecan('user')

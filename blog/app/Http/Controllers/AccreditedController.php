@@ -5,8 +5,11 @@ namespace App\Http\Controllers;
 use App\Accredited;
 use App\User;
 use Illuminate\Http\Request;
+use DB;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Hash;
+use Cache;
+use Illuminate\Support\Facades\Log;
 
 class AccreditedController extends Controller
 {
@@ -77,13 +80,13 @@ class AccreditedController extends Controller
         return redirect('accredited')->with('success_message', 'Cadastro excluído com sucesso!');
     }
 
-    public function status(Request $request)
-    {
-        $accredited = Accredited::findOrFail($request->id);
-        $accredited->status = $request->status;
-        $accredited->save();
-        return response()->json(['success' => 1]);
-    }
+    // public function status(Request $request)
+    // {
+    //     $accredited = Accredited::findOrFail($request->id);
+    //     $accredited->status = $request->status;
+    //     $accredited->save();
+    //     return response()->json(['success' => 1]);
+    // }
     // public function status ( Accredited $accredited ) {
     //     if ( $accredited->status == 0 ) {
     //         $accredited->status = 1;
@@ -94,5 +97,25 @@ class AccreditedController extends Controller
     //     return response()->json( [ 'success' => 1 ] );
     // }
 
+    // public function userOnlineStatus()
+    // {
+    //     $accrediteds = DB::table('accrediteds')->get();
+    
+    //     foreach ($accrediteds as $accredited) {
+    //         if (Cache::has('user-is-online-' . $accredited->id))
+    //             echo "User " . $accredited->status . " is online.";
+    //         else
+    //             echo "User " . $accredited->status . " is offline.";
+    //     }
+    // }
+    public function userChangeStatus(Request $request)
+    {
+    	Log::info($request->all());
+        $accrediteds = Accredited::find($request->id);
+        $accrediteds->status = $request->status;
+        $accrediteds->save();
+  
+        return response()->json(['success'=>'Status change successfully.']);
+    }
 
 }

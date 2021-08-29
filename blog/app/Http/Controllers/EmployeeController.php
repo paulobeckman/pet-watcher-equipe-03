@@ -52,7 +52,7 @@ class EmployeeController extends Controller
 
 
     public function edit($id)
-        {$data = Accredited::all();
+        $data = Accredited::all();
         $employee = Employees::findOrFail($id);
         return view('employees.edit',['data'=>$data], ['employee' => $employee]);
     }

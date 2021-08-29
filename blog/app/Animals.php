@@ -24,17 +24,17 @@ class Animals extends Model
 
     public function owner()
     {
-        return $this->belongsTo(owners::class,'id_owner', 'id');
+        return $this->hasMany(owners::class,'id_owner', 'id');
     }
 
     public function specie()
     {
-        return $this->belongsTo(Species::class,'id_specie', 'id');
+        return $this->hasMany(Species::class,'id_specie', 'id');
     }
 
     public function accredited()
     {
-        return $this->belongsTo(Accredited::class,'id_accredited_responsible', 'id');
+        return $this->hasMany(Accredited::class,'id_accredited_responsible', 'id');
     }
 
 }
