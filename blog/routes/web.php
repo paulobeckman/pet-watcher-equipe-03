@@ -93,3 +93,6 @@ Route::post('animals/create', 'AnimalsController@store')->name('novo_animal');
 Route::get('animals/{id}', 'AnimalsController@show');
 Route::get('animals/edit/{id}', 'AnimalsController@edit');
 Route::post('animals/edit/{id}', 'AnimalsController@update');
+
+Route::get('consult_information', 'ConsultDatabaseController@index');
+Route::get('consult_information/{id}', 'ConsultDatabaseController@show');

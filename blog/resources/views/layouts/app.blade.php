@@ -60,6 +60,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{url('animals')}}">Animais</a>
                             </li>
+                            <li class='nav-item'>
+                                <a class="nav-link" href="{{url('consult_information')}}">Consultar Animais</a>
+                            </li>
 
 
                         @elsecan('user')
