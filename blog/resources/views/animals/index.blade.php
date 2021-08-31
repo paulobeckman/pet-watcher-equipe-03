@@ -43,11 +43,11 @@
     <div class="col-md-4">
         <form action="{{ route('search') }}" method="get" role="search">
             {{ csrf_field() }}
-            <div class="input-group">
+            <!-- <div class="input-group">
                 <input type="text" class="form-control" name="_method" placeholder="Search Title"> 
                 <span class=" input-group-btn">
                 <button type="submit" class="btn btn-primary">Search</button></span>
-            </div>
+            </div> -->
         </form>
     </div>
     <a class="btn btn-primary mt-3" href="{{ route('novo_animal') }}">Novo Animal</a>

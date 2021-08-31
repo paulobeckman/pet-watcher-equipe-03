@@ -31,7 +31,7 @@ class LicenseController extends Controller
 
         //  $licenses = Accredited::all('cnpj', 'id');
 
-        return view('licenses.create',['data'=>$data], compact('licenses'));
+        return view('licenses.create', ['data' => $data], compact('licenses'));
     }
 
 
@@ -39,7 +39,7 @@ class LicenseController extends Controller
     {
         $license = Licenses::create($request->all());
         $license->save();
-        return redirect('license')->with( 'success_message', 'Cadastro efetuado com sucesso!' );
+        return redirect('license')->with('success_message', 'Cadastro efetuado com sucesso!');
     }
 
     public function show($id)
@@ -64,7 +64,7 @@ class LicenseController extends Controller
         $licenses->fill($request->all());
         $licenses->save();
 
-        return redirect('licenses')->with( 'success_message', 'Edição efetuada com sucesso!' );
+        return redirect('licenses')->with('success_message', 'Edição efetuada com sucesso!');
     }
 
 
@@ -72,14 +72,15 @@ class LicenseController extends Controller
     {
         $license = Licenses::findOrFail($id);
         $license->delete();
-        return redirect('license')->with( 'success_message', 'Cadastro excluído com sucesso!' );
+        return redirect('license')->with('success_message', 'Cadastro excluído com sucesso!');
     }
-//    public function revogar(Request $request)
-//    {
-//        $id = $request->idlicenca;
-//        $license = Licenses::find($id);
-//        $license->date_revocation = now();
-//        $license->save();
-//        return back();
-//    }
+
+    public function revogar(Request $request)
+    {
+        $id = $request->id;
+        $license = Licenses::find($id);
+        $license->date_revocation = now();
+        $license->save();
+        return back();
+    }
 }

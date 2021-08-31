@@ -27,7 +27,7 @@ class EmployeeController extends Controller
     {
         $data = Accredited::all();
 
-        return view('employees.create',['data'=>$data]);
+        return view('employees.create', ['data' => $data]);
     }
 
 
@@ -41,7 +41,7 @@ class EmployeeController extends Controller
         // $employee->id_user = $request->id;
         $employee->save();
         $employee->givePermissionTo('employee_user');
-        return redirect('employees')->with('success_message', 'Cadastro efetuado com sucesso!');
+        return redirect('employee')->with('success_message', 'Cadastro efetuado com sucesso!');
     }
 
     public function show($id)
@@ -55,18 +55,18 @@ class EmployeeController extends Controller
     {
         $data = Accredited::all();
         $employee = Employees::findOrFail($id);
-        return view('employees.edit',['data'=>$data], ['employee' => $employee]);
+        return view('employees.edit', ['data' => $data], ['employee' => $employee]);
     }
 
 
     public function update(Request $request, $id)
     {
-        
+
         $employees = Employees::findOrFail($id);
         $employees->fill($request->all());
         $employees->save();
         return redirect('employee')->with('success_message', 'Edição efetuada com sucesso!');
-        
+
 
         // return redirect('employees',['data'=>$data])->with('success_message', 'Edição efetuada com sucesso!');
     }

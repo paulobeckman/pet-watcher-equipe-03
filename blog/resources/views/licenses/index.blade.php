@@ -58,7 +58,7 @@
                     </form>
                 </td>
                 <td>
-                    <button class="btn btn-warning btn-sm" }>Revogar</button>
+                    <button class="btn btn-warning btn-sm" href="{{ route('licenca.revogar', $license->id) }}">Revogar</button>
                 </td>
                 @endforeach
         </tbody>

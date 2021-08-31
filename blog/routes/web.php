@@ -77,7 +77,7 @@ Route::get('license/{id}', 'LicenseController@show');
 Route::get('license/edit/{id}', 'LicenseController@edit');
 Route::post('license/edit/{id}', 'LicenseController@update');
 Route::delete('license/{id}', 'LicenseController@destroy');
-//Route::get('license/{id}','LicenseController@revogar')->name('licenca.revogar');
+Route::get('license/revogar/{id}', 'LicenseController@revogar')->name('licenca.revogar');
 
 Route::get('employee', 'EmployeeController@index');
 Route::get('employee/create', 'EmployeeController@create');
@@ -95,7 +95,7 @@ Route::get('animal/edit/{id}', 'AnimalsController@edit');
 Route::post('animal/edit/{id}', 'AnimalsController@update');
 Route::delete('animal/{id}', 'AnimalsController@destroy');
 Route::get('active', 'AnimalsController@active');
-Route::get('search','AnimalsController@search')->name('search');
+Route::get('search', 'AnimalsController@search')->name('search');
 
 Route::get('pedigree', 'PedigreeController@index');
 Route::get('pedigree/create', 'PedigreeController@create');
