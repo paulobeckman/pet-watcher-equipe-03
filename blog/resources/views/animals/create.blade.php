@@ -25,9 +25,13 @@
             <label for="data_registration" class="form-label">Data de Registro</label>
             <input class="form-control " type="date" name="data_registration" id="data_registration">
             <label for="active" class="form-label">Cadastro Ativo</label>
-            <input class="form-control " type="text" name="active" id="active">
+            <select  class="custom-select" name="active" id="active">
+                <option value="0">Desativado</option>
+                <option value="1" selected="selected">Ativo</option>
+            </select>
             <label for="reason_inactivation" class="form-label">Motivo</label>
             <input class="form-control " type="text" name="reason_inactivation" id="reason_inactivation">
+
             <label for="reason_inactivation" class="form-label">Proprietário</label>
             <select class="custom-select mr-sm-2" name="id_owner" id="$owner->owner->id">
                 @foreach ($dataO as $row)

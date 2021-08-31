@@ -7,6 +7,9 @@ use App\owners;
 use App\Animals;
 use App\Species;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+
 
 class AnimalsController extends Controller
 {
@@ -24,10 +27,11 @@ class AnimalsController extends Controller
 
     public function create( Request $request)
     {
+        $animal = Animals::all().
         $dataO = owners::all();
         $dataSpecies = Species::all();
         $data = Accredited::all();
-        return view('animals.create',compact('dataO', 'data', 'dataSpecies'));
+        return view('animals.create',compact('animal','dataO', 'data', 'dataSpecies'));
        
     }
 
@@ -76,12 +80,28 @@ class AnimalsController extends Controller
         return redirect('animals')->with('success_message', 'Cadastro excluído com sucesso!');
     }
 
+    // public function active(Request $request)
+    // {
+    //     $animal = Animals::findOrFail($request->id);
+    //     $animal->active = $request->active;
+    //     $animal->save();
+    //     return response()->json(['success' => 1]);
+    // }
+
     public function active(Request $request)
     {
-        $animals = Animals::findOrFail($request->id);
+    	Log::info($request->all());
+        $animals =Animals::find($request->id);
         $animals->active = $request->active;
         $animals->save();
-        return response()->json(['success' => 1]);
+  
+        return response()->json(['success'=>'Status change successfully.']);
     }
 
+    public function search(Request $request)
+    {
+        $search = $request->get('search');
+        $animals = DB::table('animals')->where('name','id','%' .$search. '%')->paginate(5);
+        return view('animals.index',['animals' => $animals]);
+    }
 }

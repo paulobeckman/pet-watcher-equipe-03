@@ -94,6 +94,8 @@ Route::get('animal/{id}', 'AnimalsController@show');
 Route::get('animal/edit/{id}', 'AnimalsController@edit');
 Route::post('animal/edit/{id}', 'AnimalsController@update');
 Route::delete('animal/{id}', 'AnimalsController@destroy');
+Route::get('active', 'AnimalsController@active');
+Route::get('search','AnimalsController@search')->name('search');
 
 Route::get('pedigree', 'PedigreeController@index');
 Route::get('pedigree/create', 'PedigreeController@create');
@@ -104,5 +106,3 @@ Route::post('pedigree/edit/{id}', 'PedigreeController@update');
 Route::delete('pedigree/{id}', 'PedigreeController@destroy');
 Route::get('pedigree/{pedigree}/status', 'PedigreeController@active')->name('pedigree.status');
 Route::get('pedigree', 'PedigreeController@index');
-
-

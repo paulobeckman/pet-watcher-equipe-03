@@ -18,8 +18,8 @@
             <label for="name" class="form-label">Email</label>
             <input class="form-control " type="text" name="email" id="email">
             <label for="name" class="form-label">Endereço</label>
-            <input class="form-control " type="text" name="address" id="adress">
-            <label class="small mb-1" for="inputPassword">Senha</label>
+            <input class="form-control " type="text" name="address" id="adress >
+            <label class=" small mb-1" for="inputPassword">Senha</label>
             <input class="form-control py-1" id="inputPassword" type="password" name="password" />
             <label for="id_accredited" class="form-label">CNPJ</label>
             <div>

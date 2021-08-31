@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="778b357f-8962-4936-b8a1-fa4c3f253302" name="Default Changelist" comment="[Features]&#10;Correção na view Licenças." />
+    <list default="true" id="778b357f-8962-4936-b8a1-fa4c3f253302" name="Default Changelist" comment="[Features]&#10;Crud Animais e Pedigree">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,6 +174,7 @@
       <workItem from="1629378365652" duration="8206000" />
       <workItem from="1629422933920" duration="449000" />
       <workItem from="1629832784866" duration="5111000" />
+      <workItem from="1630278332046" duration="713000" />
     </task>
     <task id="LOCAL-00001" summary="[Criando o projeto]&#10;Projeto inicial Laravel.">
       <created>1628035031987</created>
@@ -257,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629837920861</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[Features]&#10;Crud Animais e Pedigree">
+      <created>1630278855122</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1630278855122</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +296,7 @@
     <MESSAGE value="[Features]&#10;Modificação nas view.&#10;Alteração no login." />
     <MESSAGE value="[Features]&#10;Funcionarios.&#10;Niveis de acesso admin, credenciada e funcionario." />
     <MESSAGE value="[Features]&#10;Correção na view Licenças." />
-    <option name="LAST_COMMIT_MESSAGE" value="[Features]&#10;Correção na view Licenças." />
+    <MESSAGE value="[Features]&#10;Crud Animais e Pedigree" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Features]&#10;Crud Animais e Pedigree" />
   </component>
 </project>
